@@ -1,0 +1,93 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{kruskal1985allocating,polychronopoulos1987guided,tang1986processor}
+\citation{kruskal1985allocating}
+\citation{openmp2021spec52}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}Background and Related Work}{1}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Basic Concepts of Loop Scheduling}{1}{subsection.2.1}\protected@file@percent }
+\citation{polychronopoulos1987guided}
+\citation{hummel1992factoring}
+\citation{blumofe1999scheduling,agrawal2010cilk}
+\citation{liou1997hyperbolic}
+\citation{tzenakis2012bddt}
+\citation{bull1999measuring}
+\citation{chapman2007using}
+\citation{duran2008openmp}
+\citation{markbull2001epcc}
+\citation{eachempati2010evaluating}
+\@writefile{toc}{\contentsline {section}{\numberline {III}OpenMP Runtime Implementations and Measuring Overheads}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}Positioning of This Work}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Problem Formulation and Research Questions}{2}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Formal Statement of Problem}{2}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Research Questions and Hypotheses}{2}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}Evaluation Criteria}{2}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {V}System Architecture}{3}{section.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Three-layer structure of the benchmark framework. Each layer has a single responsibility: the orchestrator drives the factorial sweep, the benchmark executable is responsible for timing and correctness, and the analysis pipeline is responsible for deriving all the statistics and figures from the raw CSV output.}}{3}{figure.1}\protected@file@percent }
+\newlabel{fig:arch}{{1}{3}{Three-layer structure of the benchmark framework. Each layer has a single responsibility: the orchestrator drives the factorial sweep, the benchmark executable is responsible for timing and correctness, and the analysis pipeline is responsible for deriving all the statistics and figures from the raw CSV output}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {V-A}}Module Responsibilities}{3}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VI}Implementation and Methodology}{3}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-A}}Workload Generation with Controlled Irregularity}{3}{subsection.6.1}\protected@file@percent }
+\newlabel{eq:budget}{{4}{3}{Workload Generation with Controlled Irregularity}{equation.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {VI-A}1}Regular Workload}{3}{subsubsection.6.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {VI-A}2}Randomized Irregularity}{3}{subsubsection.6.1.2}\protected@file@percent }
+\newlabel{eq:scale}{{5}{3}{Randomized Irregularity}{equation.5}{}}
+\citation{openmp2021spec52}
+\citation{mandelbrot1980fractal}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {VI-A}3}Clustered Irregularity}{4}{subsubsection.6.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-B}}Synthetic Kernel}{4}{subsection.6.2}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{\numberline {1}Synthetic hash kernel executed W[i}{4}{lstlisting.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-C}}Implementation of Scheduling}{4}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-D}}Mandelbrot Domain Benchmark}{4}{subsection.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VI-E}}Dispatch Overhead Probe}{4}{subsection.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VII}STATISTICAL ANALYSIS}{5}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {VIII}Experimental Setup \& Evaluation}{5}{section.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-A}}Hardware/Software}{5}{subsection.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-B}}Experiment Matrix}{5}{subsection.8.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-C}}Key Findings on Timing}{5}{subsection.8.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-D}}Hypothesis Evaluation}{5}{subsection.8.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Workload profile summary n = 100,000 w\_base = 500 seed = 42}}{6}{table.1}\protected@file@percent }
+\newlabel{tab:workloads}{{I}{6}{Workload profile summary n = 100,000 w\_base = 500 seed = 42}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Median Runtime (ms) at 16 threads (95\% Bootstrap CI)}}{6}{table.2}\protected@file@percent }
+\newlabel{tab:main-results}{{II}{6}{Median Runtime (ms) at 16 threads (95\% Bootstrap CI)}{table.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {VIII-D}1}H4. Spatial Organization vs CV}{6}{subsubsection.8.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {\mbox  {VIII-D}2}H5. Chunk Size and Contention}{6}{subsubsection.8.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-E}}Scaling Behaviour and Parallel Efficiency}{6}{subsection.8.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-F}}Dispatch Overhead vs. Chunk Size}{7}{subsection.8.6}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Low-work dispatch overhead @ 16 threads}}{7}{table.3}\protected@file@percent }
+\newlabel{tab:overhead}{{III}{7}{Low-work dispatch overhead @ 16 threads}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {VIII-G}}Mandelbrot Validation}{7}{subsection.8.7}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Mandelbrot Bench (1200x900 400 max) @ 16 threads}}{7}{table.4}\protected@file@percent }
+\newlabel{tab:mandel}{{IV}{7}{Mandelbrot Bench (1200x900 400 max) @ 16 threads}{table.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {IX}Discussion}{7}{section.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IX-A}}Spatial Arrangement Result}{7}{subsection.9.1}\protected@file@percent }
+\citation{hummel1992factoring}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IX-B}}Why Dynamic C=8 dominates all profiles}{8}{subsection.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IX-C}}SMT Scaling \& Regular Workload Weirdness}{8}{subsection.9.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IX-D}}Limitations of the Dispatch Probe}{8}{subsection.9.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IX-E}}Generalisability}{8}{subsection.9.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {X}Limitations and Future Work}{8}{section.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {X-A}}Current Limitations}{8}{subsection.10.1}\protected@file@percent }
+\bibstyle{IEEEtran}
+\bibdata{references}
+\bibcite{kruskal1985allocating}{1}
+\bibcite{polychronopoulos1987guided}{2}
+\bibcite{tang1986processor}{3}
+\bibcite{openmp2021spec52}{4}
+\bibcite{hummel1992factoring}{5}
+\bibcite{blumofe1999scheduling}{6}
+\bibcite{agrawal2010cilk}{7}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {X-B}}Future work}{9}{subsection.10.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {XI}Conclusion}{9}{section.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{9}{section*.1}\protected@file@percent }
+\bibcite{liou1997hyperbolic}{8}
+\bibcite{tzenakis2012bddt}{9}
+\bibcite{bull1999measuring}{10}
+\bibcite{chapman2007using}{11}
+\bibcite{duran2008openmp}{12}
+\bibcite{markbull2001epcc}{13}
+\bibcite{eachempati2010evaluating}{14}
+\bibcite{mandelbrot1980fractal}{15}
+\gdef \@abspage@last{10}
